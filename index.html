@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div id = "card1">
+        <h1>Why i think the Toyota Corolla is the best car ever made</h1>
+        <p>Reason 1 its a Toyota</p>
+    </div>
+
+    <aside>
+        <p>VROOM VROOM</p>
+        <img src="images/images.png" alt="A Toyota Corolla" width="600px">
+    </aside>
+
+    
+    <h3 id="card2">Reason 2: The toyota corolla is also a good looking car once your past the ones made in the 1980s</h3>
+    
+
+    <h2 id="card3">Reason 3: depending on how well maintained the car is it could most likely drive well even at 300k miles</h2>
+
+    <h1 id="card4">Reason 4: The car has a very good safety rating even though its a compact sedan it is packed with safety features <br>
+            compact crossovers arent safer than sedans</h1>
+
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+
+    <script>
+        gsap.from('div',{opacity: 0, duration: 1, y: -50, ease: 'elastic(3, 0.3)'});
+
+        gsap.from('aside', {duration: 1, x: 600, opacity: 0, delay: 2});
+
+        gsap.from(document.getElementById("card2"), {duration: 1, x: 600 , duration: 1, opacity: 0, delay: 3});
+        gsap.to(document.getElementById("card2"), {duration: 1, x: 600 , duration: 1, opacity: 0, delay: 7});
+
+        gsap.from(document.getElementById("card3"), {duration: 2, x:600, duration: 1, opacity:0, delay: 8})
+        gsap.to(document.getElementById("card3"), {duration: 2, x:600, duration: 1, opacity:0, delay: 14})
+
+        gsap.from(document.getElementById("card4"), {duration: 2, x:600, duration: 1, opacity:0, delay: 16})
+        gsap.to(document.getElementById("card4"), {duration: 2, x:600, duration: 1, opacity:0, delay: 20})
+    </script>
+</body>
+</html>
